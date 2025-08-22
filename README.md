@@ -54,3 +54,19 @@ This project demonstrates the deployment and basic administration of Active Dire
 <br>
 <br>
 *Created user 'Mark' using Powershell and assigned him to the IT organizational unit. Two other users were created using the GUI; Keith was placed in the HR OU, and Terry was placed in the Sales OU.*
+
+---
+
+### Phase 5: Simple Password Reset Simulation
+
+#### User Properties Before Reset ####
+![User_Properties_Before_Reset](./Password_Reset/User_Properties_Before_Reset.png)
+<br>
+<br>
+*Baseline account state for Keith before performing a password reset. The option 'User must change password at next logon' is checked to enforce best practices, ensuring administrators do not know users’ passwords.*
+
+#### Resetting User's Password ####
+![Resetting_Password](./Password_Reset/Resetting_Password.png)
+<br>
+<br>
+*Resetting user Keith’s password in Active Directory. The new password is entered, and the option ‘User must change password at next logon’ remains checked to enforce security best practices.*
