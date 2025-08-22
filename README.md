@@ -38,3 +38,19 @@ This project demonstrates the deployment and basic administration of Active Dire
 <br>
 <br>
 *AD DS and DNS are healthy; the SYSVOL replication warning is expected since this lab uses only one domain controller.*
+
+---
+
+### Phase 2: Organizational Units & User Creation
+
+#### Creation of Organizational Units ####
+![Creation_of_Organizational_Units](./User_and_Organizational_Unit_Creation/Creation_of_Organizational_Units.png)
+<br>
+<br>
+*Created HR, IT, and Sales organizational units to simulate logical division of departments within a company.*
+
+#### User Creation Via Powershell ####
+![Creation_of_Organizational_Units](./User_and_Organizational_Unit_Creation/AD_User_Creation_Via_Powershell.png)
+<br>
+<br>
+*Created user 'Mark' using Powershell and assigned him to the IT organizational unit. Two other users were created using the GUI; Keith was placed in the HR OU, and Terry was placed in the Sales OU.*
