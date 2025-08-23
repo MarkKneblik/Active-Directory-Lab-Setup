@@ -57,6 +57,46 @@ This project demonstrates the deployment and basic administration of Active Dire
 
 ---
 
+### Phase 3: Group Policy Object Configuration
+
+#### Windows Update Settings GPO Creation ####
+![Windows Update Settings GPO Creation](./Group_Policy_Object_Configuration/Windows_Update_Settings_GPO_Creation.png)
+<br>
+<br>
+*Configured a Windows Update Settings Group Policy Object that is applied to the HR, Sales, and IT departments. 
+<br>
+It removes the ability for users to pause updates. We do not want users pushing back updates because it could lead to security vulnerabilities and compatibility issues. 
+<br>
+It also enables automatic updates at 3:00 am everyday so that if an update needs to be installed, users are not interrupted while using their PC.*
+
+#### Creation of IT_Admins Security Group ####
+![Creation of IT_Admins Security Group](./Group_Policy_Object_Configuration/Creation_of_IT_Admins_Security_Group.png)
+<br>
+<br>
+*Created a security group named IT_Admins. The purpose of this security group is to hold IT administrators so that an IT-specific Group Policy Object can be applied to these users.*
+
+#### Adding User to Security Group ####
+![Adding User to Security Group](./Group_Policy_Object_Configuration/Adding_User_to_Security_Group.png)
+<br>
+<br>
+*Added user 'Mark' to the IT_Admins security group so that the IT-Specific policy we are creating can be applied to him.*
+
+#### IT Policy Scope ####
+![IT Policy Scope](./Group_Policy_Object_Configuration/IT_Policy_Scope.png)
+<br>
+<br>
+*Here the scope of the IT-specific policy is shown. The policy applies only to members in the IT_Admins security group because we want this policy to give certain privileges to IT administrators that normal users won't have.*
+
+#### IT Policy Details ####
+![IT Policy Details](./Group_Policy_Object_Configuration/IT_Policy_Details.png)
+<br>
+<br>
+*The specifics of the IT policy are shown. The ability to load and unload device drivers is given to IT administrators because they may need to install or update hardware drivers when troubleshooting or configuring systems, while standard users do not have this privilege to prevent accidental or malicious system changes. 
+<br>
+Remote Desktop Services has been enabled to allow IT administrators to remotely access and manage computers for troubleshooting, maintenance, and support tasks.*
+
+---
+
 ### Phase 5: Simple Password Reset Simulation
 
 #### User Properties Before Reset ####
