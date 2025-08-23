@@ -97,6 +97,22 @@ Remote Desktop Services has been enabled to allow IT administrators to remotely 
 
 ---
 
+### Phase 4: Shared Folder Configuration
+
+#### Creation of Shared Folder ####
+![Creation of Shared Folder](./Shared_Folder_Configuration/Creation_of_Shared_Folder.png)
+<br>
+<br>
+*Created a shared folder that will be accessible only to the HR and Sales departments. This simulates a real-world scenario where certain teams share resources while access is restricted for others.*
+
+#### Modifying Shared Folder Permissions ####
+![Modifying Shared Folder Permissions](./Shared_Folder_Configuration/Modifying_Shared_Folder_Permissions.png)
+<br>
+<br>
+*Configured NTFS permissions to grant HR and Sales groups full control of the shared folder. IT users were intentionally excluded to follow the principle of least privilege, ensuring access is only granted to those who need it.*
+
+---
+
 ### Phase 5: Simple Password Reset Simulation
 
 #### User Properties Before Reset ####
